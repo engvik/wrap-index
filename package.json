@@ -1,0 +1,25 @@
+{
+  "name": "wrap-index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engvik/wrap-index.git"
+  },
+  "keywords": [
+    "array",
+    "wrap",
+    "index",
+    "bounds"
+  ],
+  "author": "Lars Jansøn Engvik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/engvik/wrap-index/issues"
+  },
+  "homepage": "https://github.com/engvik/wrap-index#readme"
+}
