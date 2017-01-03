@@ -1,7 +1,7 @@
 {
   "name": "wrap-index",
   "version": "1.0.0",
-  "description": "",
+  "description": "Keep an index within bounds of an array by wrapping around.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
