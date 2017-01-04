@@ -1,5 +1,5 @@
 # wrap-index
-A tiny library to keep an index within bounds of an array by wrapping around if out of bounds. Written in plain JavaScript with no dependencies.
+A function to keep an index within bounds of an array by wrapping around if out of bounds.
 
 ## Install
 

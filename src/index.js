@@ -1,5 +1,5 @@
 function wrapIndex(i, l) {
-  var m = i % l;
+  const m = i % l;
   return m < 0 ? m + l : m;
 }
 
