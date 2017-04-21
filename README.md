@@ -10,15 +10,32 @@ npm install wrap-index
 ## Usage examples
 
 ```js
+const arr = ['a', 'b', 'c'];
+
+// Return the wrapped index:
+wrapIndex(0, arr.length); // Output: 0
+wrapIndex(5, arr.length); // Output: 2
+
+// Return the wrapped value:
+wrapIndex(0, arr);        // Output: a
+wrapIndex(5, arr);        // Output: c
+```
+
+```js
 import wrapIndex from 'wrap-index';
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-months[wrapIndex(0, months.length)];    // Output: January
-months[wrapIndex(11, months.length)];   // Output: December
-months[wrapIndex(12, months.length)];   // Output: January
-months[wrapIndex(17, months.length)];   // Output: June
-months[wrapIndex(1024, months.length)]; // Output: May
+wrapIndex(0, months.length);    // Output: 0
+wrapIndex(11, months.length);   // Output: 11
+wrapIndex(12, months.length);   // Output: 0
+wrapIndex(17, months.length);   // Output: 5
+wrapIndex(1024, months.length); // Output: 4
+wrapIndex(0, months);           // Output: January
+wrapIndex(11, months);          // Output: December
+wrapIndex(12, months);          // Output: January
+wrapIndex(17, months);          // Output: June
+wrapIndex(1024, months);        // Output: May
 ```
 
 ```js
@@ -28,7 +45,7 @@ const images = ['1.png', '2.png', '3.png'];
 let currentImage = 0;
 
 setInterval(() => {
-  console.log(images[wrapIndex(currentImage++, images.length)]);
+  console.log(wrapIndex(currentImage++, images));
 }, 1000);
 
 /*
